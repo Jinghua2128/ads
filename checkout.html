@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout | EnglishScore Tutors</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar" aria-label="Site header">
+      <div class="brand brand-with-nav">
+        <a class="brand-link" href="index.html" aria-label="EnglishScore Tutors home">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span class="brand-name">BRITISH<br>COUNCIL</span>
+          <span class="brand-divider"></span>
+          <span class="brand-product">EnglishScore<br>Tutors</span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="checkout.html">Checkout</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="checkout-strip" aria-label="Checkout status">
+      <div class="strip-inner">
+        <h1>Checkout</h1>
+        <div class="security-note">
+          <span class="lock-icon" aria-hidden="true">Lock</span>
+          <span>Guaranteed <strong>safe &amp; secure</strong> checkout</span>
+        </div>
+      </div>
+    </section>
+
+    <main class="checkout-main">
+      <section class="offer-panel" aria-labelledby="offer-heading">
+        <h2 id="offer-heading">Choose your offer</h2>
+
+        <div class="currency-row">
+          <label for="currency">Currency</label>
+          <select id="currency" name="currency">
+            <option>EUR</option>
+            <option selected>USD</option>
+            <option>GBP</option>
+            <option>INR</option>
+            <option>JPY</option>
+          </select>
+        </div>
+
+        <div class="offer-card" role="radiogroup" aria-label="Tutoring session offer">
+          <button class="offer-row active" type="button" role="radio" aria-checked="true" data-sessions="1" data-price="44">
+            <span class="radio-dot" aria-hidden="true"></span>
+            <span class="offer-copy">
+              <span class="offer-title">1 Session</span>
+              <span class="offer-subtitle">USD $44.00 each</span>
+            </span>
+            <span class="offer-price">$44</span>
+          </button>
+          <button class="offer-row" type="button" role="radio" aria-checked="false" data-sessions="2" data-price="88">
+            <span class="radio-dot" aria-hidden="true"></span>
+            <span class="offer-copy">
+              <span class="offer-title">2 Sessions</span>
+              <span class="offer-subtitle">USD $44.00 each</span>
+            </span>
+            <span class="offer-price">$88</span>
+          </button>
+          <button class="offer-row" type="button" role="radio" aria-checked="false" data-sessions="4" data-price="176">
+            <span class="radio-dot" aria-hidden="true"></span>
+            <span class="offer-copy">
+              <span class="offer-title">4 Sessions</span>
+              <span class="offer-subtitle">USD $44.00 each</span>
+            </span>
+            <span class="offer-price">$176</span>
+          </button>
+          <button class="offer-row" type="button" role="radio" aria-checked="false" data-sessions="6" data-price="264">
+            <span class="radio-dot" aria-hidden="true"></span>
+            <span class="offer-copy">
+              <span class="offer-title">6 Sessions</span>
+              <span class="offer-subtitle">USD $44.00 each</span>
+            </span>
+            <span class="offer-price">$264</span>
+          </button>
+        </div>
+
+        <div class="coupon-row">
+          <label for="coupon">Insert coupon code</label>
+          <input id="coupon" name="coupon" type="text" autocomplete="off">
+          <button id="applyCoupon" class="coupon-button" type="button">Apply</button>
+        </div>
+
+        <div class="summary" aria-live="polite">
+          <span>Total</span>
+          <strong id="summaryTotal">$44 USD</strong>
+        </div>
+
+        <button id="continueButton" class="continue-button" type="button">Continue</button>
+        <p id="notice" class="notice" role="status">Local preview only. Payment processing is disabled.</p>
+      </section>
+    </main>
+
+    <div class="cookie-bar" role="note">
+      <span>This website makes use of cookies to enhance browsing experience and provide additional functionality.</span>
+      <a href="#" aria-label="Cookie details">Details</a>
+      <a href="#" aria-label="Privacy policy">Privacy policy</a>
+      <a href="#" aria-label="Customize cookies">Customize</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
